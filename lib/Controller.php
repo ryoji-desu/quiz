@@ -41,7 +41,7 @@
                 $this->setErrors('error','You are using wrong words,only number and alphabet can be accepted');
                 return;
             }
-            if (mb_strlen($n)>=10 ||mb_strlen($n)<=3) {
+            if (strlen($n)>=10 ||strlen($n)<=3) {
                 $this->setErrors('error','it should be less than 10 and more than 3');
                 return;
             }
